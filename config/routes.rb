@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  # get 'coachingcontroller/ask'
+
+  get '/ask', to: 'coachingcontroller#ask'
+  root 'coachingcontroller#ask'
+
+  get '/answer', to: 'coachingcontroller#answer'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
